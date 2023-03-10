@@ -1,0 +1,40 @@
+/* ANIMATION */
+
+@keyframes scrollYf {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+
+}
+
+@keyframes scrollYb {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+
+}
+
+.marquee-forward {
+    animation: scrollYf 10s linear infinite;
+}
+
+.marquee-backward {
+    animation: scrollYb 10s linear infinite;
+}
+
+.spotlight {
+    background-image: radial-gradient(circle,
+            transparent 10%,
+            rgba(0, 0, 0) 30%);
+
+    /* background-color: #4158D0; */
+    /* background-image: ; */
+}
